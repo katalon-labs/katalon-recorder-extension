@@ -4,9 +4,10 @@ export default {
   input: 'src/DevToolsPlugin.js',
   output: {
     file: 'dist/DevToolsPlugin.js',
+    name: 'DevToolsPlugin',
     format: 'iife'
   },
   plugins: [nodeResolve({
-    resolveOnly: ['@nightwatch/chrome-recorder', '@puppeteer/replay']
+    resolveOnly: ['@katalon/chrome-recorder', '@puppeteer/replay']
   })]
 };

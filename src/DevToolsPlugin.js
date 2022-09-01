@@ -1,10 +1,10 @@
 import {
-  nightwatchStringifyChromeRecording
-} from "@nightwatch/chrome-recorder";
+  katalonStringifyChromeRecording
+} from "@katalon/chrome-recorder";
 
 export class RecorderPlugin {
   async stringify(recording) {
-    return await nightwatchStringifyChromeRecording(JSON.stringify(recording));
+    return await katalonStringifyChromeRecording(JSON.stringify(recording));
   }
   async stringifyStep(step) {
     return JSON.stringify(step);
@@ -15,7 +15,7 @@ export class RecorderPlugin {
 chrome.devtools.recorder.registerRecorderExtensionPlugin(
   new RecorderPlugin(),
   /* name=*/
-  'Nightwatch test',
+  'Katalon test',
   /* mediaType=*/
   'text/javascript'
 );

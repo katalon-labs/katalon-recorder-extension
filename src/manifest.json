@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "version": "0.1.2",
-  "name": "Nightwatch Chrome Recorder",
-  "description": "Nightwatch Extension for Devtools that allows you to export tests directly from the Recorder panel.",
+  "name": "Katalon Chrome Recorder",
+  "description": "Katalon Extension for Devtools that allows you to export tests directly from the Recorder panel.",
   "permissions": [],
   "devtools_page": "DevToolsPlugin.html",
   "icons": {
